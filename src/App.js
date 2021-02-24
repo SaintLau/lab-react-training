@@ -9,6 +9,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
                     gender='female'
                     height={172}
                     birth={new Date("1988-05-11")}
-                     picture="https://randomuser.me/api/portraits/women/44.jpg"
+                    picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
         <Greetings lang='de'>Ludwig</Greetings>
         <Greetings lang='fr'>François</Greetings>
@@ -91,6 +92,10 @@ function App() {
         />
         <LikeButton /> 
         <LikeButton />
+        <ClickablePicture
+                    img='/img/persons/maxence.png'
+                    imgClicked='/img/persons/maxence-glasses.png'
+        />
       </div>
   );
 }
